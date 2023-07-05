@@ -1,11 +1,14 @@
 import React from "react";
 import { MuiTheme } from "./theme/";
 import { Router } from "./Router";
+import { Store } from "./context/UserContext";
 
 function App() {
     return (
         <MuiTheme>
-            <Router />
+            <Store>
+                <Router />
+            </Store>
         </MuiTheme>
     );
 }
